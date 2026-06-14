@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI PR Reviewer 🚀
 
-## Getting Started
+An intelligent web application that leverages AI to automate and enhance GitHub Pull Request reviews. Built with modern web technologies, this tool helps developers catch bugs, enforce coding standards, and improve code quality through automated AI feedback.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Automated Code Review:** Utilize AI to analyze pull requests for potential issues, code smells, and improvements.
+- **Modern UI:** Clean, accessible, and highly customizable user interface built with Tailwind CSS and shadcn/ui.
+- **Dark/Light Mode:** Full theme support out of the box using `next-themes`.
+- **Efficient Data Fetching:** Powered by TanStack Query (React Query) for seamless API interactions and caching.
+- **Fully Typed:** Written completely in TypeScript for robust and error-free development.
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+- **State/Data Management:** [TanStack Query](https://tanstack.com/query/latest)
+- **Package Manager:** [pnpm](https://pnpm.io/)
+
+## 📂 Project Structure
+
+```text
+.
+├── app/                  # Next.js App Router pages and layouts
+├── components/           # Reusable UI components
+│   ├── providers/        # React context providers (Theme, Query, etc.)
+│   └── ui/               # shadcn/ui base components
+├── hooks/                # Custom React hooks (e.g., use-mobile)
+├── lib/                  # Utility functions and shared logic
+├── public/               # Static assets (images, SVGs)
+└── ...config files       # Next.js, TypeScript, Tailwind, and ESLint configurations
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ensure you have the following installed on your local machine:
 
-## Learn More
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [pnpm](https://pnpm.io/installation) (v8 or higher)
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git clone [https://github.com/anoop-rajoriya/ai-pr-reviewer.git](https://github.com/anoop-rajoriya/ai-pr-reviewer.git)
+cd ai-pr-reviewer
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm install
+
+```
+
+3. **Set up Environment Variables:**
+   Create a `.env.local` file in the root directory and add any necessary environment variables (e.g., AI Provider API keys, GitHub tokens).
+   _(Note: Add specific required variables here as the project evolves)_
+4. **Run the development server:**
+
+```bash
+pnpm dev
+
+```
+
+5. **Open the application:**
+   Navigate to [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) in your browser to see the app running.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
+
+---
+
+_Built by [Anoop Rajoriya_](https://www.google.com/search?q=https://github.com/anoop-rajoriya)
